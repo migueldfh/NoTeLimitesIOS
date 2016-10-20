@@ -2,7 +2,7 @@
 //  No_te_limitesTests.swift
 //  No te limitesTests
 //
-//  Created by Griselda Epifanio on 9/18/16.
+//  Created by Griselda Epifanio on 10/10/16.
 //  Copyright © 2016 Jose Epifanio. All rights reserved.
 //
 
@@ -28,7 +28,7 @@ class No_te_limitesTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

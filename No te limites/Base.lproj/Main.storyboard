@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,165 +15,266 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJt-j8-0f6">
-                                <rect key="frame" x="211" y="285" width="179" height="30"/>
-                                <state key="normal" title="Something about location"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BACK INICIO.png" translatesAutoresizingMaskIntoConstraints="NO" id="YmU-Qe-dew"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresa tu ubicacion" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ptb-aY-nay">
+                                <frame key="frameInset" minX="96" minY="217" width="182" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kas-s4-U0T">
+                                <frame key="frameInset" minX="82" minY="483" width="210" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ENCONTRAR UBICACION BOTON.png"/>
                                 <connections>
-                                    <segue destination="Z30-Is-WJY" kind="popoverPresentation" popoverAnchorView="EJt-j8-0f6" id="vby-it-rFW">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="0rS-YR-8zS" kind="presentation" id="tBC-aS-OHJ"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="EJt-j8-0f6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Thq-PJ-GuF"/>
-                            <constraint firstItem="EJt-j8-0f6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iT4-DY-b3t"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YmU-Qe-dew" secondAttribute="bottom" id="9BJ-0u-kL8"/>
+                            <constraint firstItem="YmU-Qe-dew" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gLh-Kt-kmJ"/>
+                            <constraint firstItem="YmU-Qe-dew" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="x03-fr-ZbM"/>
+                            <constraint firstAttribute="trailing" secondItem="YmU-Qe-dew" secondAttribute="trailing" id="xwJ-gk-FMf"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="373" y="339"/>
+            <point key="canvasLocation" x="-1111" y="-215"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="CZq-Ah-tYX">
+        <!--Buscar-->
+        <scene sceneID="nxd-1I-Jur">
             <objects>
-                <viewController id="7pv-cT-1cg" sceneMemberID="viewController">
+                <viewController id="lBm-ey-Qb8" customClass="SearchController" customModule="No_te_limites" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rYK-mO-XpG"/>
-                        <viewControllerLayoutGuide type="bottom" id="JcF-CB-EYK"/>
+                        <viewControllerLayoutGuide type="top" id="RMs-37-b3b"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q85-CH-eou"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ckp-RM-fUH">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="Xer-65-mIn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebU-1h-3gy">
+                                <frame key="frameInset" minY="28" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tr9-DN-n6O">
+                                <frame key="frameInset" minY="72" width="375" height="281"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Buscar" image="BUSCAR-UBICACION.png" selectedImage="BUSCAR-UBICACION.png" id="JBk-se-j6j"/>
+                    <connections>
+                        <outlet property="mapView" destination="tr9-DN-n6O" id="wy6-Xj-YfG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sdt-GR-88n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420" y="583.3583208395803"/>
+        </scene>
+        <!--Blog-->
+        <scene sceneID="qtV-v3-LXJ">
+            <objects>
+                <viewController id="Bbv-EM-POl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wZf-7U-kWh"/>
+                        <viewControllerLayoutGuide type="bottom" id="J6L-iZ-7vz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uI6-Ry-QXq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="X6g-8M-scI"/>
+                    <tabBarItem key="tabBarItem" title="Blog" image="BLOG.png" selectedImage="BLOG.png" id="eY0-nU-zeK"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rpc-fu-IU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecl-pP-P3m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1773" y="-561"/>
+            <point key="canvasLocation" x="303" y="652"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="L8W-tg-QDj">
+        <!--Soporte-->
+        <scene sceneID="2XA-KI-rbI">
             <objects>
-                <viewController id="q9p-zC-TiW" sceneMemberID="viewController">
+                <viewController id="Y8c-zl-gwd" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6I4-Sr-oxW"/>
-                        <viewControllerLayoutGuide type="bottom" id="LEp-A0-Po0"/>
+                        <viewControllerLayoutGuide type="top" id="H2d-wK-Lwm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y6E-HD-cNs"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ixq-Sq-XeS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="9YA-cT-NC2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="topRated" id="sTq-mq-4bg"/>
+                    <tabBarItem key="tabBarItem" title="Soporte" image="SOPORTE.png" selectedImage="SOPORTE.png" id="JyG-xL-ue8"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LZ9-eB-RvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qaQ-Nt-ohG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1773" y="156"/>
+            <point key="canvasLocation" x="1010" y="652"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="AHN-sO-Cqd">
+        <!--Instituciones Culturales-->
+        <scene sceneID="hAU-oZ-OlC">
             <objects>
-                <viewController id="kvc-5f-L4F" sceneMemberID="viewController">
+                <viewController id="zSm-ry-AFz" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yqb-m1-dLe"/>
-                        <viewControllerLayoutGuide type="bottom" id="noj-v4-3bu"/>
+                        <viewControllerLayoutGuide type="top" id="IPu-eE-xHH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uc2-bI-NYJ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gUR-L1-lec">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="oAc-Jm-pON">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="h57-aA-x4y"/>
+                    <tabBarItem key="tabBarItem" title="Instituciones Culturales" image="INST CULT.png" selectedImage="INST CULT.png" id="0wa-4l-Bzn"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wcV-0n-XP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QSM-H6-dHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2349" y="846"/>
+            <point key="canvasLocation" x="2609" y="-214"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="2dI-RM-6P8">
+        <!--Agradecimientos-->
+        <scene sceneID="uco-jL-SYn">
             <objects>
-                <viewController id="Ywy-y7-h61" sceneMemberID="viewController">
+                <viewController id="wu0-ZU-Ajz" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="PMn-5l-xD3"/>
-                        <viewControllerLayoutGuide type="bottom" id="sl6-Xl-AKd"/>
+                        <viewControllerLayoutGuide type="top" id="ypK-fa-C3e"/>
+                        <viewControllerLayoutGuide type="bottom" id="zNt-JP-Opg"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dhC-oY-9fC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="d8i-I3-S4r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="BeB-tT-qnE"/>
+                    <tabBarItem key="tabBarItem" title="Agradecimientos" image="AGRADECIMIENTOS.png" selectedImage="AGRADECIMIENTOS.png" id="FUY-1f-jEF"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4wN-kG-6nb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZsO-Qv-F1i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="297" y="1147"/>
+            <point key="canvasLocation" x="2609" y="502"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="fhW-8k-bbV">
+        <!--Contacto-->
+        <scene sceneID="z2w-ts-0DX">
             <objects>
-                <viewController id="aoh-w8-gCI" sceneMemberID="viewController">
+                <viewController id="ETm-xT-MpD" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dqa-oM-02L"/>
-                        <viewControllerLayoutGuide type="bottom" id="XuB-jK-m2Z"/>
+                        <viewControllerLayoutGuide type="top" id="EMR-Hk-Nbs"/>
+                        <viewControllerLayoutGuide type="bottom" id="f7g-eU-vPL"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5eL-fm-Bnf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="PHe-6J-owf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="Mmo-kY-L3v"/>
+                    <tabBarItem key="tabBarItem" title="Contacto" image="CONTACTO.png" selectedImage="CONTACTO.png" id="6cN-BS-OaT"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GjY-1n-7Xy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nqo-Z8-nFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="961" y="1158"/>
+            <point key="canvasLocation" x="1762" y="583"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="9Px-AD-ds5">
+        <!--Perfil-->
+        <scene sceneID="egx-Ys-8qn">
             <objects>
-                <viewController id="tcu-i9-YBM" sceneMemberID="viewController">
+                <viewController id="aec-B9-bbN" customClass="ProfileController" customModule="No_te_limites" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="poa-wp-oh0"/>
-                        <viewControllerLayoutGuide type="bottom" id="C40-nv-qio"/>
+                        <viewControllerLayoutGuide type="top" id="L83-47-deX"/>
+                        <viewControllerLayoutGuide type="bottom" id="PQd-tr-4Av"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RJC-pl-YjI">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="JLp-8D-9A0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BACK PROFILE.png" translatesAutoresizingMaskIntoConstraints="NO" id="NZp-TI-Wf7">
+                                <frame key="frameInset" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="darth-vader-profile.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x2b-Tw-srh">
+                                <frame key="frameInset" minX="99" minY="28" width="177" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFy-3V-T2W">
+                                <frame key="frameInset" minX="16" minY="285" width="156" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="FAV EVENTOS OFF.png"/>
+                                <connections>
+                                    <action selector="yourEventsOnClick:" destination="aec-B9-bbN" eventType="touchUpInside" id="OFc-1K-6Iy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06Z-Zf-PkN">
+                                <frame key="frameInset" minX="203" minY="285" width="156" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="FAV LUGARES OFF.png"/>
+                                <connections>
+                                    <action selector="yourPlacesOnClick:" destination="aec-B9-bbN" eventType="touchUpInside" id="fmV-UE-5Ze"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4E-Sv-Fmo">
+                                <frame key="frameInset" minX="16" minY="360" width="343" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Darth Vader" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXY-dy-aCo">
+                                <frame key="frameInset" minX="67" minY="220" width="240" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="8Dj-tU-NFM"/>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="PERFIL.png" selectedImage="PERFIL.png" id="8C3-hA-2wd"/>
+                    <connections>
+                        <outlet property="profileImage" destination="x2b-Tw-srh" id="mov-D7-J7N"/>
+                        <outlet property="yourEventsBtn" destination="jFy-3V-T2W" id="AU4-4e-eVU"/>
+                        <outlet property="yourPlacesBtn" destination="06Z-Zf-PkN" id="v2A-EI-Buv"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9i2-D4-R8g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q85-Cp-9D4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1649" y="1158"/>
+            <point key="canvasLocation" x="-1111.2" y="502.39880059970017"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="rvx-T5-Kqb">
+        <scene sceneID="17v-Vo-QkF">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Z30-Is-WJY" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="5Gk-5k-bi0">
+                <tabBarController id="0rS-YR-8zS" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="hN3-WB-V42">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="7pv-cT-1cg" kind="relationship" relationship="viewControllers" id="JP0-ui-xTB"/>
-                        <segue destination="q9p-zC-TiW" kind="relationship" relationship="viewControllers" id="fcS-Jl-PlU"/>
-                        <segue destination="Ywy-y7-h61" kind="relationship" relationship="viewControllers" id="o7p-c2-YCd"/>
-                        <segue destination="aoh-w8-gCI" kind="relationship" relationship="viewControllers" id="lpY-ii-m8G"/>
-                        <segue destination="tcu-i9-YBM" kind="relationship" relationship="viewControllers" id="64y-Ip-qEP"/>
-                        <segue destination="kvc-5f-L4F" kind="relationship" relationship="viewControllers" id="0Cq-b3-lhN"/>
+                        <segue destination="aec-B9-bbN" kind="relationship" relationship="viewControllers" id="BCG-y6-Jfj"/>
+                        <segue destination="lBm-ey-Qb8" kind="relationship" relationship="viewControllers" id="HEt-7C-Spi"/>
+                        <segue destination="Bbv-EM-POl" kind="relationship" relationship="viewControllers" id="v3L-1N-yXY"/>
+                        <segue destination="Y8c-zl-gwd" kind="relationship" relationship="viewControllers" id="QDa-h2-IWU"/>
+                        <segue destination="ETm-xT-MpD" kind="relationship" relationship="viewControllers" id="sMF-8d-oK8"/>
+                        <segue destination="wu0-ZU-Ajz" kind="relationship" relationship="viewControllers" id="1YC-4p-53M"/>
+                        <segue destination="zSm-ry-AFz" kind="relationship" relationship="viewControllers" id="Oz2-sX-0GU"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dF0-K8-ofP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cyg-NJ-dzV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1051" y="339"/>
+            <point key="canvasLocation" x="666" y="-147"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AGRADECIMIENTOS.png" width="16" height="16"/>
+        <image name="BACK INICIO.png" width="320" height="410"/>
+        <image name="BACK PROFILE.png" width="320" height="186"/>
+        <image name="BLOG.png" width="16" height="20"/>
+        <image name="BUSCAR-UBICACION.png" width="17" height="16"/>
+        <image name="CONTACTO.png" width="16" height="16"/>
+        <image name="ENCONTRAR UBICACION BOTON.png" width="182" height="40"/>
+        <image name="FAV EVENTOS OFF.png" width="158" height="40"/>
+        <image name="FAV LUGARES OFF.png" width="158" height="40"/>
+        <image name="INST CULT.png" width="16" height="16"/>
+        <image name="PERFIL.png" width="16" height="16"/>
+        <image name="SOPORTE.png" width="17" height="17"/>
+        <image name="darth-vader-profile.jpg" width="300" height="450"/>
+    </resources>
+    <color key="tintColor" red="1" green="0.10736277" blue="0.42584242259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
